@@ -1,16 +1,10 @@
 {
   "name": "PostgreSQL Clases Bases de Datos 2026-1",
-  "dockerComposeFile": "docker-compose.yml",
-  "service": "app",
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
   "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {}
-  },
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y postgresql-client",
-  "forwardPorts": [5432],
-  "portsAttributes": {
-    "5432": {
-      "label": "PostgreSQL"
+    "ghcr.io/devcontainers/features/postgres:1": {
+      "version": "16"
     }
   }
 }
