@@ -2,5 +2,6 @@
   "name": "PostgreSQL Clases Bases de Datos 2026-1",
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y postgresql-client"
 }
